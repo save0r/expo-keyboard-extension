@@ -4,6 +4,14 @@ export function close(): void {
   return ExpoKeyboardExtensionModule.close();
 }
 
+export function pasteFromClipboard(): void {
+  return ExpoKeyboardExtensionModule.pasteFromClipboard();
+}
+
+export function addText(text: string): void {
+  return ExpoKeyboardExtensionModule.addText(text);
+}
+
 export interface IExtensionPreprocessingJS {
   run: (args: { completionFunction: (data: unknown) => void }) => void;
   finalize: (args: unknown) => void;
