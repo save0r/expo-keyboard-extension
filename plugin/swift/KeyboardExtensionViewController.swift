@@ -126,9 +126,7 @@ extension UIView {
   func addKeyboardSubview(_ subview: UIView, withHeight: CGFloat) {
     subview.translatesAutoresizingMaskIntoConstraints = false
       
-      subview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-      subview.backgroundColor = UIColor.systemBlue
-             
+    subview.autoresizingMask = [.flexibleWidth, .flexibleHeight]         
    
     addSubview(subview)
     NSLayoutConstraint.activate([
