@@ -4,10 +4,6 @@ export function close(): void {
   return ExpoKeyboardExtensionModule.close();
 }
 
-export function pasteFromClipboard(): void {
-  return ExpoKeyboardExtensionModule.pasteFromClipboard();
-}
-
 export function addText(text: string): void {
   return ExpoKeyboardExtensionModule.addText(text);
 }
