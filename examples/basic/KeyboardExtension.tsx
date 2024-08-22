@@ -1,5 +1,5 @@
 import { Button, StyleSheet, Text, View } from "react-native";
-import { addText, pasteFromClipboard } from "expo-keyboard-extension";
+import { addText } from "expo-keyboard-extension";
 export default function KeyboardExtension({ url }: { url: string }) {
   console.log("Keyboard!");
 
@@ -10,7 +10,6 @@ export default function KeyboardExtension({ url }: { url: string }) {
       >
         Changes?
       </Text>
-      <Button title="Paste" onPress={pasteFromClipboard} />
 
       <Button title="Add Text" onPress={() => addText("Hello World")} />
     </View>
